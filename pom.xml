@@ -16,7 +16,7 @@
 	<artifactId>guru-pet-clinic</artifactId>
 	<version>0.0.2-SNAPSHOT</version>
 	<name>guru-pet-clinic</name>
-	<description>pet clinit project</description>
+	<description>pet clinic project</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -45,6 +45,7 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<configuration>
 					<goals>install</goals>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
 				</configuration>
 			</plugin>
 		</plugins>
