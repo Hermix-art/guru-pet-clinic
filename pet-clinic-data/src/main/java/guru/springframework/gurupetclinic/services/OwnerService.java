@@ -7,13 +7,6 @@ import java.util.Set;
 /**
  * @author Herman Kulik
  */
-public interface OwnerService {
-
+public interface OwnerService extends CrudService<Owner, Long> {//all parent methods are defined here, but with defined types: Owner, Long
     Owner findByLastName(String lastName);
-
-    Owner findById(Long id);
-
-    Owner save(Owner owner);
-
-    Set<Owner> findAll();
 }

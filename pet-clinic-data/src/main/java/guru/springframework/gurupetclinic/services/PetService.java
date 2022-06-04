@@ -1,6 +1,5 @@
 package guru.springframework.gurupetclinic.services;
 
-import guru.springframework.gurupetclinic.model.Owner;
 import guru.springframework.gurupetclinic.model.Pet;
 
 import java.util.Set;
@@ -8,10 +7,7 @@ import java.util.Set;
 /**
  * @author Herman Kulik
  */
-public interface PerService {
-    Pet findById(Long id);
+public interface PetService extends CrudService<Pet, Long> {//all parent methods are defined here, but with defined types: Pet, Long
 
-    Pet save(Pet pet);
 
-    Set<Pet> findAll();
 }
