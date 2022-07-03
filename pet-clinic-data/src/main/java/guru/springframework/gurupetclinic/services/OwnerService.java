@@ -1,8 +1,7 @@
 package guru.springframework.gurupetclinic.services;
 
 import guru.springframework.gurupetclinic.model.Owner;
-
-import java.util.Set;
+import guru.springframework.gurupetclinic.model.Person;
 
 /**
  * @author Herman Kulik
