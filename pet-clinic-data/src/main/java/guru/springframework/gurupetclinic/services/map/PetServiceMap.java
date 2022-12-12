@@ -7,11 +7,8 @@ import org.springframework.stereotype.Service;
 /**
  * @author Herman Kulik
  */
+// class implements API, and extends it's implementation
 @Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
-    @Override
-    public Pet save(Pet value) {
-        map.put(value.getId(), value);
-        return value;
-    }
+
 }

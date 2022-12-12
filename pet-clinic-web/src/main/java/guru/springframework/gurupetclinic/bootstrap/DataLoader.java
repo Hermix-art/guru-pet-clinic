@@ -30,14 +30,12 @@ public class DataLoader implements CommandLineRunner { // springboot specific wa
         // for now services are just saving to hashmap
 
         Owner owner1 = new Owner();
-        owner1.setId(1L);
         owner1.setFirstName("Herman");
         owner1.setLastName("Smith");
 
         ownerService.save(owner1);
 
         Owner owner2 = new Owner();
-        owner2.setId(2L);
         owner2.setFirstName("Fiona");
         owner2.setLastName("Smith");
 
@@ -47,14 +45,12 @@ public class DataLoader implements CommandLineRunner { // springboot specific wa
         System.out.println(ownerService.findAll());
 
         Vet vet1 = new Vet();
-        vet1.setId(1L);
         vet1.setFirstName("John");
         vet1.setLastName("Axe");
 
         vetService.save(vet1);
 
         Vet vet2 = new Vet();
-        vet2.setId(2L);
         vet2.setFirstName("John");
         vet2.setLastName("Bullock");
 
