@@ -18,9 +18,9 @@ public class DataLoader implements CommandLineRunner { // springboot specific wa
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        this.ownerService = new OwnerServiceMap();
-        this.vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
@@ -42,6 +42,7 @@ public class DataLoader implements CommandLineRunner { // springboot specific wa
         ownerService.save(owner2);
 
         System.out.println("Owners are loaded...");
+        System.out.println(ownerService.findAll());
 
         Vet vet1 = new Vet();
         vet1.setId(1L);
@@ -58,5 +59,6 @@ public class DataLoader implements CommandLineRunner { // springboot specific wa
         vetService.save(vet2);
 
         System.out.println("Vets are loaded...");
+        System.out.println(vetService.findAll());
     }
 }

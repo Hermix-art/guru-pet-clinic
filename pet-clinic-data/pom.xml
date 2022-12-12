@@ -13,7 +13,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
 
-<!--        this is needed for packaging, as without it it tries to make uber jar, but cannot find main class-->
+<!--        this is needed for packaging, as without it, it tries to make uber jar, but cannot find main class-->
         <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
     </properties>
 
