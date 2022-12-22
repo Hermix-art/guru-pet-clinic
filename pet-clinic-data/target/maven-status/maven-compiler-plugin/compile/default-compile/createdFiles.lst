@@ -1,5 +1,14 @@
+guru/springframework/gurupetclinic/model/BaseEntity.class
+guru/springframework/gurupetclinic/services/VetService.class
+guru/springframework/gurupetclinic/services/map/VetServiceMap.class
+guru/springframework/gurupetclinic/services/map/PetServiceMap.class
+guru/springframework/gurupetclinic/services/map/OwnerServiceMap.class
 guru/springframework/gurupetclinic/model/Pet.class
+guru/springframework/gurupetclinic/services/map/AbstractMapService.class
 guru/springframework/gurupetclinic/model/PetType.class
-guru/springframework/gurupetclinic/model/Owner.class
 guru/springframework/gurupetclinic/model/Vet.class
+guru/springframework/gurupetclinic/services/PetService.class
 guru/springframework/gurupetclinic/model/Person.class
+guru/springframework/gurupetclinic/services/CrudService.class
+guru/springframework/gurupetclinic/model/Owner.class
+guru/springframework/gurupetclinic/services/OwnerService.class
